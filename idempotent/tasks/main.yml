@@ -7,9 +7,7 @@
     owner: root
     group: root
     mode: 0644
-
-#- name: Extract terraform
-#  command: unzip -o /tmp/terraform_0.11.7_linux_amd64.zip -d /usr/bin chdir=/tmp 
+    force: no  
 
 - name: Extract terraform_0.11.7_linux_amd64.zip file 
   unarchive:
